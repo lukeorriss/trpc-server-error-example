@@ -5,6 +5,7 @@ import { getServerAuthSession } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 
 export default async function Home() {
+  // force the error to be thrown.
   const hello = await api.post.hello({ text: "error" });
   const session = await getServerAuthSession();
 

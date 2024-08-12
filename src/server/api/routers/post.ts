@@ -15,7 +15,7 @@ export const postRouter = createTRPCRouter({
       if (input.text === "error") {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "User not found.",
+          message: "Forced error being thrown.",
           // optional: pass the original error to retain stack trace
         });
       }

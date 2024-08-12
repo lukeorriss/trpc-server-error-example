@@ -18,7 +18,7 @@ const error = ({ error, reset }: Props) => {
       <div className="mx-auto max-w-md text-center">
         <div className="text-primary mx-auto h-12 w-12" />
         <h1 className="text-foreground mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-          Sorry, something&apos;s gone wrong! 😢
+          Error: {httpCode}
         </h1>
         <p className="text-muted-foreground mt-4">{error.message}</p>
       </div>
